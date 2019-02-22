@@ -1,0 +1,7 @@
+// Generated using xcconfig-extractor 0.4.0 by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/Area51.app/Area51
+INFOPLIST_FILE = Area51Tests/SupportFiles/Info.plist
+BUNDLE_LOADER = $(TEST_HOST)
+PRODUCT_BUNDLE_IDENTIFIER = io.area51.Area51Tests

@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066989B038EDBFD9453C1D831311301F /* GPSPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0FF0EAD4779C0EE21EDCEF6F0949DC /* GPSPermissionViewController.swift */; };
+		0FE427BC8704A8C3594621371B720FB6 /* GPSPermissionViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C77E1FC7B207CC579324AD8104437 /* GPSPermissionViewControllerFactory.swift */; };
+		13FDEC428B82112378267B296CB7B61F /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A678AFC00F11AF2343CEC3D78E223 /* MapAnnotation.swift */; };
+		1A3A121D8031E11DF1BAA1C7375F73BF /* RestaurantDetailsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545BF4295CEDF4922679779C91FA4DA /* RestaurantDetailsViewControllerFactory.swift */; };
+		2381A91598CDF50020D0C1A9302FC8C7 /* RestaurantRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19C5F5F8016ACA31B0B78ED1C3315D /* RestaurantRepositoryProtocol.swift */; };
+		2595743DEB68AB5D565138972C13F7E7 /* VenueDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5FD047F0EC914A622BAFDAD3E850B /* VenueDTO.swift */; };
+		39AA7C1F3C3AA40521D06CE751F0BBDF /* MainWindowBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DFE483090E867B8D5A885F83463B87 /* MainWindowBuilderTest.swift */; };
+		47164DBED1317BC4FCC368123AF295AB /* GetVenuesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D15AC23C6FA8DE1F5CC17C36FF04ED /* GetVenuesResponseDTO.swift */; };
+		47D5C420BF7BF8EF5AF77E0AC5463903 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76745847A8F332D42EDF941ACD5D22C /* URLSessionProtocol.swift */; };
+		4B45DD215065CB668ACBFC4F2FA8E539 /* VenueCategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D573CAFFFE301FADCB946BD0AA2B57A /* VenueCategoryDTO.swift */; };
+		4DB5E32D58A05DF42D59086C4DC5BA07 /* CustomAssertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB6546068123067B4A90D9DFCC9294 /* CustomAssertsTests.swift */; };
+		5C5DFC5C170457A8B4595FEC7067F1D7 /* UIViewController+Embedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC81644F10B5414BBAB0D3FA8A5EF4 /* UIViewController+Embedded.swift */; };
+		6FD255DEDD2FEF802AF2503ED86B044A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725DFC98D7D9A60508314E22BBF29BAE /* AppDelegate.swift */; };
+		7E35669CFC0801C0D4AFC2A3158BBB89 /* URLRequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DBC964F6D9FF4AEDB21B31EBE734DC /* URLRequestConfig.swift */; };
+		7FFBEBDA0F101611163B507B06D962BD /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDED9EB33B2A40E601EEC1FB2AAADA57 /* TestAppDelegate.swift */; };
+		8107317870A650C1734168611B5B2A94 /* MapViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B07D30D11ACDB6B10C0202CEECF71B /* MapViewControllerViewModel.swift */; };
+		91D3C2331AEDD636B33A23530AB887D5 /* RestaurantWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE051E91DA6C0FBB725CB12A0FF9E11C /* RestaurantWebRepository.swift */; };
+		954020B469F1C86F7FBCA1CCBC1BFE3F /* GPSPermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CC0ABE4FDDD17D425EC8A97267680 /* GPSPermissionViewModel.swift */; };
+		95D95041F3D555FF73558E91931863A9 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B341DFCDFBA593A80D5607726EBD76 /* HTTPClient.swift */; };
+		96D6F32015104432DED3602D63EBF262 /* GPSPermissionViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7CC0BA47063C5954DA5AF370B3EA8 /* GPSPermissionViewModelProtocol.swift */; };
+		99938DC58F20C5F1238CF28E05B12F13 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850BF8210A72DCE4B67FF51B01FAEB35 /* main.swift */; };
+		9B9076483BC70304BDED14395761118E /* RestaurantDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E8E65F690CE08A09784F32CF2A015A /* RestaurantDetailsViewModel.swift */; };
+		9CCC636987DFAC8DCF02B24944169437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C974D673B9E3F0633B1EE88C5139CFB1 /* LaunchScreen.storyboard */; };
+		9DB4E4B3EDFBDAC24DF0FC2A742F99F8 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34609757784206E5E55E8E9AD0D2520 /* RestaurantDetailsViewController.swift */; };
+		A2927D76522306CD15CD2C6646147D68 /* GPSPermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A725D0891855DB4719F0FD29B532BDE0 /* GPSPermissionViewController.xib */; };
+		A6F9729368293663F91BB0DC5E7BE97B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C92E5579F16CAAC56575F1AE21DC07 /* NetworkError.swift */; };
+		B153009AF3880DB62BC508DCC90EE842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD86F2FEB2D1BF812FEFD57DA67B110 /* Assets.xcassets */; };
+		B53562B70FF6CC434563AE5BD5FC4B0F /* VenueLocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630EA7C668BA7282A9E6AB58DEFE57A /* VenueLocationDTO.swift */; };
+		B5722E3EB9324E2E4424A4DCF1F7EC79 /* MainWindowBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A14AA9A10404F75689E94A47BED4FA /* MainWindowBuilder.swift */; };
+		B57B5ED66BBA52818799A0A6813CAB15 /* RestaurantRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697B37DBFF670B560B278A1AE93E5A2 /* RestaurantRepositoryFactory.swift */; };
+		B790AD37CEAE69124E0CF1BF832F65A3 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF6B22AB7196F3361A2777AC047508 /* Restaurant.swift */; };
+		B9514563E171C2EB58FF762FB2A04804 /* MapViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208C9B1FAADA1BB03C0CD5D5A36F679 /* MapViewControllerFactory.swift */; };
+		BD5A41F676D5520A2A90041CB6FEB68C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23360BE4733F1E0A0BAC4A9CF09A0581 /* MapViewController.swift */; };
+		BF73BF31ED414F4117852237217AA2C8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A8775B86550A1BC3E0D16A61803647 /* Location.swift */; };
+		C025B6A6D117C622D9B5487E8F4E54DC /* CustomAsserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9366233772ECB2274D28F3403777955 /* CustomAsserts.swift */; };
+		C07398CBE4F250EC430E8BF705D56BD8 /* VenueToRestaurantAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9926E4E62B4F5C561DD584447F7B2C3 /* VenueToRestaurantAdapter.swift */; };
+		CC2BAF8E599BB9EF2BABEABBE0C76108 /* ResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5EBAAE7CC1F56DADADF719CA7CB1BC /* ResponseDTO.swift */; };
+		CCC192E81ECDB866EFE5145B31A18688 /* MapViewControllerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5404403C29A893202C772435A3B0EB2 /* MapViewControllerViewModelProtocol.swift */; };
+		DA35786389EE98CDBC567F96DA5CD0EA /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545FB410E093803E8EDAC15842D00295 /* MapViewController.xib */; };
+		E039DC6AA7C147B5B5E7D69D526728EB /* RestaurantDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54E5CFC3EF00D29D9138D07887110C4 /* RestaurantDetailsViewController.xib */; };
+		E045D6DA42F1CE8C20DEE540C2F7EE88 /* MetadataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20878108126B5730356D84A175E6A12 /* MetadataDTO.swift */; };
+		E5C4C73915C898A1FB0F75F8E3917AF2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E40D3687C7D547F99385B7ECB5DA5EC /* Result.swift */; };
+		E75086BA4E6590801953C9C9C425F375 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A0728741614E551DFF9E69F85B8484 /* HTTPClientProtocol.swift */; };
+		E7B16A31EAF9374957AADEE8DD4910E6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A689DC39793F083316F43C0C9F0256 /* HTTPMethod.swift */; };
+		F71B2FDBC30638A1BBA690658E761A2A /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA78EB11300B1CCB6BC9E4267265AF8 /* APIResult.swift */; };
+		F9E664F65A69359234AFC317EDB1E3D6 /* RestaurantDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F44C91E42E1127CBD6B4ED7BADACE01 /* RestaurantDetailsViewModelProtocol.swift */; };
+		FE50018F618901E7F41880850A3A8AAF /* RestaurantToAnnotationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50512E875ECB39054C39BEE08363C11C /* RestaurantToAnnotationAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51509BFBC20BA264B11A6CFDE777D941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BC928AF45C224BEA3B438AB7FB5082B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5462C26EAAC11C911F8CD34F7AB5BC16;
+			remoteInfo = Area51;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032C7C36FBA2420E30A7A8FEC3735B96 /* Area51-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Area51-Release.xcconfig"; sourceTree = "<group>"; };
+		1FD86F2FEB2D1BF812FEFD57DA67B110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23360BE4733F1E0A0BAC4A9CF09A0581 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		23AC81644F10B5414BBAB0D3FA8A5EF4 /* UIViewController+Embedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embedded.swift"; sourceTree = "<group>"; };
+		23B030A8890DD758D1DC12EB992818AD /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		2F5EBAAE7CC1F56DADADF719CA7CB1BC /* ResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDTO.swift; sourceTree = "<group>"; };
+		308CC0ABE4FDDD17D425EC8A97267680 /* GPSPermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSPermissionViewModel.swift; sourceTree = "<group>"; };
+		3F19C5F5F8016ACA31B0B78ED1C3315D /* RestaurantRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRepositoryProtocol.swift; sourceTree = "<group>"; };
+		47FB6546068123067B4A90D9DFCC9294 /* CustomAssertsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAssertsTests.swift; sourceTree = "<group>"; };
+		4F44C91E42E1127CBD6B4ED7BADACE01 /* RestaurantDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		50512E875ECB39054C39BEE08363C11C /* RestaurantToAnnotationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantToAnnotationAdapter.swift; sourceTree = "<group>"; };
+		52602E2AE794A9500A710EC373D2EFB6 /* Area51.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Area51.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A0728741614E551DFF9E69F85B8484 /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		545FB410E093803E8EDAC15842D00295 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		547AEBB537CD036EEB120913C276C4BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		553FB4177D124031E215E3CCEA8F5D44 /* Area51Tests-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Area51Tests-Debug.xcconfig"; sourceTree = "<group>"; };
+		592CA733BD4CCCA000890C16925A4636 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		61D15AC23C6FA8DE1F5CC17C36FF04ED /* GetVenuesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVenuesResponseDTO.swift; sourceTree = "<group>"; };
+		65A8775B86550A1BC3E0D16A61803647 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6630EA7C668BA7282A9E6AB58DEFE57A /* VenueLocationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueLocationDTO.swift; sourceTree = "<group>"; };
+		665A678AFC00F11AF2343CEC3D78E223 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		6DD80E88E02E46C8195679986AEF7868 /* Area51-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Area51-Debug.xcconfig"; sourceTree = "<group>"; };
+		725DFC98D7D9A60508314E22BBF29BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79BCB372742C0D25CAC218F5C1965DBE /* Area51Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Area51Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D573CAFFFE301FADCB946BD0AA2B57A /* VenueCategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCategoryDTO.swift; sourceTree = "<group>"; };
+		83C92E5579F16CAAC56575F1AE21DC07 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		850BF8210A72DCE4B67FF51B01FAEB35 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8C7A202D2A6FA6C1A63E6FA93AAEBCC6 /* Area51Tests-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Area51Tests-Release.xcconfig"; sourceTree = "<group>"; };
+		98A14AA9A10404F75689E94A47BED4FA /* MainWindowBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowBuilder.swift; sourceTree = "<group>"; };
+		9ACB57C753FA060753D87ABF8688F508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8BAAE7BB91F569601F11942B2142DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E40D3687C7D547F99385B7ECB5DA5EC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A725D0891855DB4719F0FD29B532BDE0 /* GPSPermissionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSPermissionViewController.xib; sourceTree = "<group>"; };
+		A76745847A8F332D42EDF941ACD5D22C /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		B1DBC964F6D9FF4AEDB21B31EBE734DC /* URLRequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConfig.swift; sourceTree = "<group>"; };
+		B208C9B1FAADA1BB03C0CD5D5A36F679 /* MapViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerFactory.swift; sourceTree = "<group>"; };
+		B54E5CFC3EF00D29D9138D07887110C4 /* RestaurantDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantDetailsViewController.xib; sourceTree = "<group>"; };
+		B697B37DBFF670B560B278A1AE93E5A2 /* RestaurantRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRepositoryFactory.swift; sourceTree = "<group>"; };
+		B9926E4E62B4F5C561DD584447F7B2C3 /* VenueToRestaurantAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueToRestaurantAdapter.swift; sourceTree = "<group>"; };
+		BDED9EB33B2A40E601EEC1FB2AAADA57 /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		C34609757784206E5E55E8E9AD0D2520 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
+		D4B341DFCDFBA593A80D5607726EBD76 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		D6DFE483090E867B8D5A885F83463B87 /* MainWindowBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowBuilderTest.swift; sourceTree = "<group>"; };
+		DDCF6B22AB7196F3361A2777AC047508 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		DFD7CC0BA47063C5954DA5AF370B3EA8 /* GPSPermissionViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSPermissionViewModelProtocol.swift; sourceTree = "<group>"; };
+		E20878108126B5730356D84A175E6A12 /* MetadataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataDTO.swift; sourceTree = "<group>"; };
+		E7E8E65F690CE08A09784F32CF2A015A /* RestaurantDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewModel.swift; sourceTree = "<group>"; };
+		E8A689DC39793F083316F43C0C9F0256 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E9366233772ECB2274D28F3403777955 /* CustomAsserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsserts.swift; sourceTree = "<group>"; };
+		EBA78EB11300B1CCB6BC9E4267265AF8 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		ECD5FD047F0EC914A622BAFDAD3E850B /* VenueDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDTO.swift; sourceTree = "<group>"; };
+		EE051E91DA6C0FBB725CB12A0FF9E11C /* RestaurantWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWebRepository.swift; sourceTree = "<group>"; };
+		EE0FF0EAD4779C0EE21EDCEF6F0949DC /* GPSPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSPermissionViewController.swift; sourceTree = "<group>"; };
+		EE5C77E1FC7B207CC579324AD8104437 /* GPSPermissionViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSPermissionViewControllerFactory.swift; sourceTree = "<group>"; };
+		F5404403C29A893202C772435A3B0EB2 /* MapViewControllerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerViewModelProtocol.swift; sourceTree = "<group>"; };
+		F545BF4295CEDF4922679779C91FA4DA /* RestaurantDetailsViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewControllerFactory.swift; sourceTree = "<group>"; };
+		F5B07D30D11ACDB6B10C0202CEECF71B /* MapViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		45F4CC9512DF8464A42818C9A92D5E17 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9ACB57C753FA060753D87ABF8688F508 /* Info.plist */,
+				C974D673B9E3F0633B1EE88C5139CFB1 /* LaunchScreen.storyboard */,
+				850BF8210A72DCE4B67FF51B01FAEB35 /* main.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		5254D5622A847CC4A6A4E383783C9847 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				61D15AC23C6FA8DE1F5CC17C36FF04ED /* GetVenuesResponseDTO.swift */,
+				E20878108126B5730356D84A175E6A12 /* MetadataDTO.swift */,
+				2F5EBAAE7CC1F56DADADF719CA7CB1BC /* ResponseDTO.swift */,
+				7D573CAFFFE301FADCB946BD0AA2B57A /* VenueCategoryDTO.swift */,
+				ECD5FD047F0EC914A622BAFDAD3E850B /* VenueDTO.swift */,
+				6630EA7C668BA7282A9E6AB58DEFE57A /* VenueLocationDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		54CC2619E5DF3338B8F2384B2B5C6F00 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFE483090E867B8D5A885F83463B87 /* MainWindowBuilderTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		716505543EC90E2F28F0AF886AD1AD25 /* GPSPermissionScene */ = {
+			isa = PBXGroup;
+			children = (
+				EE0FF0EAD4779C0EE21EDCEF6F0949DC /* GPSPermissionViewController.swift */,
+				A725D0891855DB4719F0FD29B532BDE0 /* GPSPermissionViewController.xib */,
+				EE5C77E1FC7B207CC579324AD8104437 /* GPSPermissionViewControllerFactory.swift */,
+				308CC0ABE4FDDD17D425EC8A97267680 /* GPSPermissionViewModel.swift */,
+				DFD7CC0BA47063C5954DA5AF370B3EA8 /* GPSPermissionViewModelProtocol.swift */,
+			);
+			path = GPSPermissionScene;
+			sourceTree = "<group>";
+		};
+		7A50A39747415F6871319F69BF4BA5D2 /* RestaurantDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				C34609757784206E5E55E8E9AD0D2520 /* RestaurantDetailsViewController.swift */,
+				B54E5CFC3EF00D29D9138D07887110C4 /* RestaurantDetailsViewController.xib */,
+				F545BF4295CEDF4922679779C91FA4DA /* RestaurantDetailsViewControllerFactory.swift */,
+				E7E8E65F690CE08A09784F32CF2A015A /* RestaurantDetailsViewModel.swift */,
+				4F44C91E42E1127CBD6B4ED7BADACE01 /* RestaurantDetailsViewModelProtocol.swift */,
+			);
+			path = RestaurantDetailsScene;
+			sourceTree = "<group>";
+		};
+		7B6FEBF9E4F090FDB62F248FEFD0F1B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65A8775B86550A1BC3E0D16A61803647 /* Location.swift */,
+				665A678AFC00F11AF2343CEC3D78E223 /* MapAnnotation.swift */,
+				DDCF6B22AB7196F3361A2777AC047508 /* Restaurant.swift */,
+				9E40D3687C7D547F99385B7ECB5DA5EC /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F094C85A33756AD526E4A06623E6CB7 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9C8BAAE7BB91F569601F11942B2142DC /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		9862A11FE24854C5F22AAA9F0E7341B2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				716505543EC90E2F28F0AF886AD1AD25 /* GPSPermissionScene */,
+				ED8B0ADA81689B32179491276F8FB78D /* MapScene */,
+				7A50A39747415F6871319F69BF4BA5D2 /* RestaurantDetailsScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A484A6CC55E89CA74032F33625E9D5CD /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				6DD80E88E02E46C8195679986AEF7868 /* Area51-Debug.xcconfig */,
+				032C7C36FBA2420E30A7A8FEC3735B96 /* Area51-Release.xcconfig */,
+				553FB4177D124031E215E3CCEA8F5D44 /* Area51Tests-Debug.xcconfig */,
+				8C7A202D2A6FA6C1A63E6FA93AAEBCC6 /* Area51Tests-Release.xcconfig */,
+				592CA733BD4CCCA000890C16925A4636 /* Debug.xcconfig */,
+				23B030A8890DD758D1DC12EB992818AD /* Release.xcconfig */,
+			);
+			path = xcconfigs;
+			sourceTree = "<group>";
+		};
+		A9636D064ADDF4DDB74B4DBF749C4D3D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23AC81644F10B5414BBAB0D3FA8A5EF4 /* UIViewController+Embedded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B40B7C1D55C26DBE418AA3649BE7F4FD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B697B37DBFF670B560B278A1AE93E5A2 /* RestaurantRepositoryFactory.swift */,
+				3F19C5F5F8016ACA31B0B78ED1C3315D /* RestaurantRepositoryProtocol.swift */,
+				EE051E91DA6C0FBB725CB12A0FF9E11C /* RestaurantWebRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BD3E42F25CD350A14E5473AC356E1716 /* Area51 */ = {
+			isa = PBXGroup;
+			children = (
+				1FD86F2FEB2D1BF812FEFD57DA67B110 /* Assets.xcassets */,
+				EA724788996FA15078A5C5D264FAF18F /* Adapters */,
+				BFA9F9AA184493852F024AEC7124C472 /* AppDelegate */,
+				5254D5622A847CC4A6A4E383783C9847 /* DTOs */,
+				F2F493231AC9322825D56F4E619E980C /* Errors */,
+				A9636D064ADDF4DDB74B4DBF749C4D3D /* Extensions */,
+				7B6FEBF9E4F090FDB62F248FEFD0F1B8 /* Models */,
+				D9E1E616AD1710420CAFA8945ED29E4E /* Networking */,
+				B40B7C1D55C26DBE418AA3649BE7F4FD /* Repositories */,
+				9862A11FE24854C5F22AAA9F0E7341B2 /* Scenes */,
+				45F4CC9512DF8464A42818C9A92D5E17 /* SupportFiles */,
+			);
+			path = Area51;
+			sourceTree = "<group>";
+		};
+		BFA9F9AA184493852F024AEC7124C472 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				725DFC98D7D9A60508314E22BBF29BAE /* AppDelegate.swift */,
+				98A14AA9A10404F75689E94A47BED4FA /* MainWindowBuilder.swift */,
+				BDED9EB33B2A40E601EEC1FB2AAADA57 /* TestAppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C6F16387FBC91D8A89E89C10E4FD9B23 = {
+			isa = PBXGroup;
+			children = (
+				BD3E42F25CD350A14E5473AC356E1716 /* Area51 */,
+				E73327E286D39E4A44762E984B48FF19 /* Area51Tests */,
+				A484A6CC55E89CA74032F33625E9D5CD /* xcconfigs */,
+				F4C4624C84AFFEF5F488A40538C56D06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC88E28105A88A0A5371CE97BB4AD66C /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				E9366233772ECB2274D28F3403777955 /* CustomAsserts.swift */,
+				47FB6546068123067B4A90D9DFCC9294 /* CustomAssertsTests.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		D9E1E616AD1710420CAFA8945ED29E4E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EBA78EB11300B1CCB6BC9E4267265AF8 /* APIResult.swift */,
+				D4B341DFCDFBA593A80D5607726EBD76 /* HTTPClient.swift */,
+				53A0728741614E551DFF9E69F85B8484 /* HTTPClientProtocol.swift */,
+				E8A689DC39793F083316F43C0C9F0256 /* HTTPMethod.swift */,
+				B1DBC964F6D9FF4AEDB21B31EBE734DC /* URLRequestConfig.swift */,
+				A76745847A8F332D42EDF941ACD5D22C /* URLSessionProtocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E73327E286D39E4A44762E984B48FF19 /* Area51Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CC88E28105A88A0A5371CE97BB4AD66C /* Matchers */,
+				8F094C85A33756AD526E4A06623E6CB7 /* SupportFiles */,
+				54CC2619E5DF3338B8F2384B2B5C6F00 /* Tests */,
+			);
+			path = Area51Tests;
+			sourceTree = "<group>";
+		};
+		EA724788996FA15078A5C5D264FAF18F /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				50512E875ECB39054C39BEE08363C11C /* RestaurantToAnnotationAdapter.swift */,
+				B9926E4E62B4F5C561DD584447F7B2C3 /* VenueToRestaurantAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		ED8B0ADA81689B32179491276F8FB78D /* MapScene */ = {
+			isa = PBXGroup;
+			children = (
+				23360BE4733F1E0A0BAC4A9CF09A0581 /* MapViewController.swift */,
+				545FB410E093803E8EDAC15842D00295 /* MapViewController.xib */,
+				B208C9B1FAADA1BB03C0CD5D5A36F679 /* MapViewControllerFactory.swift */,
+				F5B07D30D11ACDB6B10C0202CEECF71B /* MapViewControllerViewModel.swift */,
+				F5404403C29A893202C772435A3B0EB2 /* MapViewControllerViewModelProtocol.swift */,
+			);
+			path = MapScene;
+			sourceTree = "<group>";
+		};
+		F2F493231AC9322825D56F4E619E980C /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				83C92E5579F16CAAC56575F1AE21DC07 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		F4C4624C84AFFEF5F488A40538C56D06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52602E2AE794A9500A710EC373D2EFB6 /* Area51.app */,
+				79BCB372742C0D25CAC218F5C1965DBE /* Area51Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5462C26EAAC11C911F8CD34F7AB5BC16 /* Area51 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B72450DCBE21C04DC8FFB8C69DBFAD3C /* Build configuration list for PBXNativeTarget "Area51" */;
+			buildPhases = (
+				F0E8FD8CC2A85F0E9D57FF1B18E398F2 /* Sources */,
+				4C7B5BC01A427917A45B102C5C36DDAE /* Resources */,
+				2A74B89C741807092D7A1F07737220FD /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Area51;
+			productName = Area51;
+			productReference = 52602E2AE794A9500A710EC373D2EFB6 /* Area51.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88C214090F487E4AEDFCF5BCA2BD35E5 /* Area51Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C96928969FE1F6402073978204C9CEE /* Build configuration list for PBXNativeTarget "Area51Tests" */;
+			buildPhases = (
+				C10A4D284A01951406A856AB44E3CBF5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4200FFA79F046F40D3F0F9B30B5347A /* PBXTargetDependency */,
+			);
+			name = Area51Tests;
+			productName = Area51Tests;
+			productReference = 79BCB372742C0D25CAC218F5C1965DBE /* Area51Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BC928AF45C224BEA3B438AB7FB5082B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					5462C26EAAC11C911F8CD34F7AB5BC16 = {
+						DevelopmentTeam = ABCDE12345;
+						ProvisioningStyle = Automatic;
+					};
+					88C214090F487E4AEDFCF5BCA2BD35E5 = {
+						DevelopmentTeam = ABCDE12345;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5462C26EAAC11C911F8CD34F7AB5BC16;
+					};
+				};
+			};
+			buildConfigurationList = EE0344D265AA94809370294B73EDD336 /* Build configuration list for PBXProject "Area51" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = C6F16387FBC91D8A89E89C10E4FD9B23;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5462C26EAAC11C911F8CD34F7AB5BC16 /* Area51 */,
+				88C214090F487E4AEDFCF5BCA2BD35E5 /* Area51Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C7B5BC01A427917A45B102C5C36DDAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B153009AF3880DB62BC508DCC90EE842 /* Assets.xcassets in Resources */,
+				A2927D76522306CD15CD2C6646147D68 /* GPSPermissionViewController.xib in Resources */,
+				9CCC636987DFAC8DCF02B24944169437 /* LaunchScreen.storyboard in Resources */,
+				DA35786389EE98CDBC567F96DA5CD0EA /* MapViewController.xib in Resources */,
+				E039DC6AA7C147B5B5E7D69D526728EB /* RestaurantDetailsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A74B89C741807092D7A1F07737220FD /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10A4D284A01951406A856AB44E3CBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C025B6A6D117C622D9B5487E8F4E54DC /* CustomAsserts.swift in Sources */,
+				4DB5E32D58A05DF42D59086C4DC5BA07 /* CustomAssertsTests.swift in Sources */,
+				39AA7C1F3C3AA40521D06CE751F0BBDF /* MainWindowBuilderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E8FD8CC2A85F0E9D57FF1B18E398F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F71B2FDBC30638A1BBA690658E761A2A /* APIResult.swift in Sources */,
+				6FD255DEDD2FEF802AF2503ED86B044A /* AppDelegate.swift in Sources */,
+				066989B038EDBFD9453C1D831311301F /* GPSPermissionViewController.swift in Sources */,
+				0FE427BC8704A8C3594621371B720FB6 /* GPSPermissionViewControllerFactory.swift in Sources */,
+				954020B469F1C86F7FBCA1CCBC1BFE3F /* GPSPermissionViewModel.swift in Sources */,
+				96D6F32015104432DED3602D63EBF262 /* GPSPermissionViewModelProtocol.swift in Sources */,
+				47164DBED1317BC4FCC368123AF295AB /* GetVenuesResponseDTO.swift in Sources */,
+				95D95041F3D555FF73558E91931863A9 /* HTTPClient.swift in Sources */,
+				E75086BA4E6590801953C9C9C425F375 /* HTTPClientProtocol.swift in Sources */,
+				E7B16A31EAF9374957AADEE8DD4910E6 /* HTTPMethod.swift in Sources */,
+				BF73BF31ED414F4117852237217AA2C8 /* Location.swift in Sources */,
+				B5722E3EB9324E2E4424A4DCF1F7EC79 /* MainWindowBuilder.swift in Sources */,
+				13FDEC428B82112378267B296CB7B61F /* MapAnnotation.swift in Sources */,
+				BD5A41F676D5520A2A90041CB6FEB68C /* MapViewController.swift in Sources */,
+				B9514563E171C2EB58FF762FB2A04804 /* MapViewControllerFactory.swift in Sources */,
+				8107317870A650C1734168611B5B2A94 /* MapViewControllerViewModel.swift in Sources */,
+				CCC192E81ECDB866EFE5145B31A18688 /* MapViewControllerViewModelProtocol.swift in Sources */,
+				E045D6DA42F1CE8C20DEE540C2F7EE88 /* MetadataDTO.swift in Sources */,
+				A6F9729368293663F91BB0DC5E7BE97B /* NetworkError.swift in Sources */,
+				CC2BAF8E599BB9EF2BABEABBE0C76108 /* ResponseDTO.swift in Sources */,
+				B790AD37CEAE69124E0CF1BF832F65A3 /* Restaurant.swift in Sources */,
+				9DB4E4B3EDFBDAC24DF0FC2A742F99F8 /* RestaurantDetailsViewController.swift in Sources */,
+				1A3A121D8031E11DF1BAA1C7375F73BF /* RestaurantDetailsViewControllerFactory.swift in Sources */,
+				9B9076483BC70304BDED14395761118E /* RestaurantDetailsViewModel.swift in Sources */,
+				F9E664F65A69359234AFC317EDB1E3D6 /* RestaurantDetailsViewModelProtocol.swift in Sources */,
+				B57B5ED66BBA52818799A0A6813CAB15 /* RestaurantRepositoryFactory.swift in Sources */,
+				2381A91598CDF50020D0C1A9302FC8C7 /* RestaurantRepositoryProtocol.swift in Sources */,
+				FE50018F618901E7F41880850A3A8AAF /* RestaurantToAnnotationAdapter.swift in Sources */,
+				91D3C2331AEDD636B33A23530AB887D5 /* RestaurantWebRepository.swift in Sources */,
+				E5C4C73915C898A1FB0F75F8E3917AF2 /* Result.swift in Sources */,
+				7FFBEBDA0F101611163B507B06D962BD /* TestAppDelegate.swift in Sources */,
+				5C5DFC5C170457A8B4595FEC7067F1D7 /* UIViewController+Embedded.swift in Sources */,
+				7E35669CFC0801C0D4AFC2A3158BBB89 /* URLRequestConfig.swift in Sources */,
+				47D5C420BF7BF8EF5AF77E0AC5463903 /* URLSessionProtocol.swift in Sources */,
+				4B45DD215065CB668ACBFC4F2FA8E539 /* VenueCategoryDTO.swift in Sources */,
+				2595743DEB68AB5D565138972C13F7E7 /* VenueDTO.swift in Sources */,
+				B53562B70FF6CC434563AE5BD5FC4B0F /* VenueLocationDTO.swift in Sources */,
+				C07398CBE4F250EC430E8BF705D56BD8 /* VenueToRestaurantAdapter.swift in Sources */,
+				99938DC58F20C5F1238CF28E05B12F13 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4200FFA79F046F40D3F0F9B30B5347A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5462C26EAAC11C911F8CD34F7AB5BC16 /* Area51 */;
+			targetProxy = 51509BFBC20BA264B11A6CFDE777D941 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C974D673B9E3F0633B1EE88C5139CFB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547AEBB537CD036EEB120913C276C4BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15C96F097674AFD2E049953AA7B15EA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B030A8890DD758D1DC12EB992818AD /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		197F7D5D679751A457C1F049B7C27153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592CA733BD4CCCA000890C16925A4636 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A7D0451088C5799357552F220804F881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7A202D2A6FA6C1A63E6FA93AAEBCC6 /* Area51Tests-Release.xcconfig */;
+			buildSettings = {
+				TEST_TARGET_NAME = Area51;
+			};
+			name = Release;
+		};
+		AD9DD1AA819711762E4C29D5EE54EE9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD80E88E02E46C8195679986AEF7868 /* Area51-Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+			};
+			name = Debug;
+		};
+		DB28E6BF6FB73EC5AA9DCF5846975303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032C7C36FBA2420E30A7A8FEC3735B96 /* Area51-Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+			};
+			name = Release;
+		};
+		F640C1EBFA188B377B94103D43BB9A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553FB4177D124031E215E3CCEA8F5D44 /* Area51Tests-Debug.xcconfig */;
+			buildSettings = {
+				TEST_TARGET_NAME = Area51;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C96928969FE1F6402073978204C9CEE /* Build configuration list for PBXNativeTarget "Area51Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F640C1EBFA188B377B94103D43BB9A4D /* Debug */,
+				A7D0451088C5799357552F220804F881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		B72450DCBE21C04DC8FFB8C69DBFAD3C /* Build configuration list for PBXNativeTarget "Area51" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9DD1AA819711762E4C29D5EE54EE9B /* Debug */,
+				DB28E6BF6FB73EC5AA9DCF5846975303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		EE0344D265AA94809370294B73EDD336 /* Build configuration list for PBXProject "Area51" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197F7D5D679751A457C1F049B7C27153 /* Debug */,
+				15C96F097674AFD2E049953AA7B15EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BC928AF45C224BEA3B438AB7FB5082B /* Project object */;
+}

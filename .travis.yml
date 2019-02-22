@@ -1,0 +1,10 @@
+os: osx
+osx_image: xcode10.1
+language: swift
+
+install:
+- gem install xcpretty
+- gem install xcpretty-travis-formatter
+
+script:
+- xcodebuild clean test -project ./Area51.xcodeproj -scheme Area51 -destination "platform=iOS Simulator,name=iPhone XR,OS=12.1" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty -f `xcpretty-travis-formatter` && exit ${PIPESTATUS[0]}

@@ -1,0 +1,32 @@
+name: Area51
+groupSortPosition: top
+configFiles:
+  Debug: xcconfigs/Debug.xcconfig
+  Release: xcconfigs/Release.xcconfig
+targets:
+  Area51:
+    type: application
+    platform: iOS
+    deploymentTarget: "12.1"
+    sources: [Area51]
+    configFiles:
+        Debug: xcconfigs/Area51-Debug.xcconfig
+        Release: xcconfigs/Area51-Release.xcconfig
+    dependencies: []
+    postbuildScripts:
+      - name: Swiftlint
+        script: |
+                if which swiftlint >/dev/null; then
+                  swiftlint
+                else
+                  echo "error: SwiftLint not installed"
+                fi
+  Area51Tests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Area51Tests]
+    configFiles:
+        Debug: xcconfigs/Area51Tests-Debug.xcconfig
+        Release: xcconfigs/Area51Tests-Release.xcconfig
+    dependencies:
+      - target: Area51
