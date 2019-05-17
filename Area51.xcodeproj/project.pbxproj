@@ -78,7 +78,7 @@
 		47FB6546068123067B4A90D9DFCC9294 /* CustomAssertsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAssertsTests.swift; sourceTree = "<group>"; };
 		4F44C91E42E1127CBD6B4ED7BADACE01 /* RestaurantDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
 		50512E875ECB39054C39BEE08363C11C /* RestaurantToAnnotationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantToAnnotationAdapter.swift; sourceTree = "<group>"; };
-		52602E2AE794A9500A710EC373D2EFB6 /* Area51.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Area51.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52602E2AE794A9500A710EC373D2EFB6 /* Area51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Area51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A0728741614E551DFF9E69F85B8484 /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
 		545FB410E093803E8EDAC15842D00295 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		547AEBB537CD036EEB120913C276C4BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -395,7 +395,6 @@
 				LastUpgradeCheck = 1000;
 				TargetAttributes = {
 					5462C26EAAC11C911F8CD34F7AB5BC16 = {
-						DevelopmentTeam = ABCDE12345;
 						ProvisioningStyle = Automatic;
 					};
 					88C214090F487E4AEDFCF5BCA2BD35E5 = {
@@ -541,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23B030A8890DD758D1DC12EB992818AD /* Release.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
@@ -548,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 592CA733BD4CCCA000890C16925A4636 /* Debug.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -564,6 +565,8 @@
 			baseConfigurationReference = 6DD80E88E02E46C8195679986AEF7868 /* Area51-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FJKBR6T662;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -572,6 +575,8 @@
 			baseConfigurationReference = 032C7C36FBA2420E30A7A8FEC3735B96 /* Area51-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FJKBR6T662;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
