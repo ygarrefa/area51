@@ -1,1 +1,1 @@
-mint run yonaskolb/xcodegen
+mint run yonaskolb/xcodegen@2.3.0
